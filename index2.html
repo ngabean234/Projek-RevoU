@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="title">Welcome to Katik</h1>
+    <div>
+        <p class="subtitle">Hai Sobat, Selamat datang di Katik</p>
+        <p class="subtitle2">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangunan
+            datar</p>
+    </div>
+    <header>
+        <nav>
+            <ul class="menu">
+                <a href="index.html" class="box">Segitiga</a>
+                <a href="index2.html" class="menu-triangle2">Jajargenjang</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="triagle">
+            <div class="card">
+                <center>
+                    <h2>Luas Jajargenjang</h2>
+                    <img src="assets/jajargenjang.jpeg" width="400px">
+                    <div>
+                        <h4>Rumus Luas Segitiga</h4>
+                        <p>L = A x T</p>
+                    </div>
+                </center>
+                <div>
+                    <p>Di mana :</p>
+                    <p>L : Luas</p>
+                    <p>A : Alas</p>
+                    <p>T : Tinggi</p>
+                </div>
+                <div class="form-hitung">
+                    <h1>Hitung Luas Jajargenjang</h1>
+                    <form action="" class="form-triangle" onsubmit="return false">
+                        <input type="number" id="alas" placeholder="Masukan Alas">
+                        <input type="number" id="tinggi" placeholder="Masukan Tinggi">
+                        <div>
+                            <p id="error"></p>
+                            <p id="luas"></p>
+                        </div>
+                        <button type="button" onclick="hitungLuasjajargenjang()" class="button-triangle">Hitung</button>
+                        <button type="reset" class="button-reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <main>
+            <section id="triangle">
+                <div class="card">
+                    <center>
+                        <h2>Keliling Jajargenjang</h2>
+                        <img src="assets/jajargenjang.jpeg" width="400px">
+                        <div>
+                            <h4>Rumus Keliling Jajargenjang</h4>
+                            <p>K = 2 x (S1+S2) </p>
+                        </div>
+                    </center>
+                    <div>
+                        <p>Di mana :</p>
+                        <p>K : Keliling</p>
+                        <p>S1 : Alas</p>
+                        <p>S2 : Tinggi</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitung Keliling Jajargenjang</h1>
+                        <form action="" class="form-triangle" onsubmit="return false">
+                            <input type="number" id="sisi-a" placeholder="Sisi A" required>
+                            <input type="number" id="sisi-b" placeholder="Sisi B" required>
+                            <div>
+                                <p id="keliling"></p>
+                                <p id="eror"></p>
+                            </div>
+                            <button type="button" onclick="hitungKelilingjajargenjang()" class="button-triangle">Hitung</button>
+                            <button type="reset" class="button-reset">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+    <footer class="jarak">
+        <a href="https://www.instagram.com/m_veri_irawan/"><img src="assets/ig.jpg" style="width: 30px; height: 30px;"></a>
+        <a href="https://www.facebook.com/jordan.a.kasano"><img src="assets/fb.png" style="width: 30px;height: 30px;"></a>
+        <a href="https://www.linkedin.com/in/veri-irawan-7671371bb/"><img src="assets/in.png" style="width: 30px; height: 30px;"></a>  
+        <a href="https://github.com/ngabean234"><img src="assets/git.png" style="width: 30px; height: 30px;"></a>
+        <a href="https://gitlab.com/veriirawan235"><img src="assets/lab.png" style="width: 30px; height: 30px;"></a>
+        <center>@Copyright 2023 Mohammad Veri Irawan</center>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
